@@ -17,50 +17,71 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9A-6z-Gt4">
-                                <rect key="frame" x="166" y="359" width="61.333333333333343" height="60"/>
+                                <rect key="frame" x="46.666666666666657" y="406" width="300" height="40"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Uxm-If-pLL"/>
+                                    <constraint firstAttribute="width" constant="300" id="xi2-Sl-Q5f"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.67559538249999995" green="1" blue="0.99540882399999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUZ-uF-tQI">
-                                <rect key="frame" x="46.333333333333343" y="462" width="300" height="40"/>
+                                <rect key="frame" x="46.666666666666657" y="454" width="300" height="40"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="sbJ-C2-ce9"/>
-                                    <constraint firstAttribute="width" constant="300" id="tSq-4X-sGr"/>
+                                    <constraint firstAttribute="width" constant="300" id="GeQ-6N-mNH"/>
+                                    <constraint firstAttribute="height" constant="40" id="bLt-uK-vdE"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Increment"/>
                                 <connections>
                                     <action selector="Increase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVf-8C-NBE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vl-XW-KDj">
-                                <rect key="frame" x="46.333333333333343" y="542" width="300" height="34.333333333333371"/>
+                                <rect key="frame" x="46.666666666666657" y="510.33333333333326" width="300" height="40"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1o4-qU-432"/>
+                                    <constraint firstAttribute="height" constant="40" id="mVb-Pr-aNK"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Decrement"/>
                                 <connections>
                                     <action selector="Decrease:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t4N-Nu-sBK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inN-ab-XNJ">
+                                <rect key="frame" x="252" y="570.33333333333337" width="94" height="40"/>
+                                <color key="backgroundColor" red="0.42327004325175621" green="0.57475143671035767" blue="0.56253297887998277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="n9c-fG-sYU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="u9d-vF-9N9"/>
+                                    <constraint firstAttribute="width" constant="94" id="ynt-RO-X09"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="reset">
+                                    <color key="baseForegroundColor" systemColor="groupTableViewBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Decrease:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbG-R2-ZP1"/>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VEi-Id-Xwj"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="TUZ-uF-tQI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46.329999999999998" id="02O-aE-WTm"/>
-                            <constraint firstItem="m9A-6z-Gt4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="BFr-3e-3d5"/>
-                            <constraint firstItem="2Vl-XW-KDj" firstAttribute="top" secondItem="TUZ-uF-tQI" secondAttribute="bottom" constant="40" id="SDX-CN-dEi"/>
-                            <constraint firstItem="TUZ-uF-tQI" firstAttribute="top" secondItem="m9A-6z-Gt4" secondAttribute="bottom" constant="43" id="SaO-m7-aUH"/>
-                            <constraint firstItem="2Vl-XW-KDj" firstAttribute="top" secondItem="TUZ-uF-tQI" secondAttribute="bottom" constant="40" id="T3V-Q1-2px"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m9A-6z-Gt4" secondAttribute="bottom" constant="399" id="bcv-dT-wtn"/>
-                            <constraint firstItem="2Vl-XW-KDj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46.329999999999998" id="ew4-qP-Gyf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m9A-6z-Gt4" secondAttribute="trailing" constant="165.66999999999999" id="pms-Jd-pd5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TUZ-uF-tQI" secondAttribute="trailing" constant="46.670000000000002" id="quO-Fw-bOr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Vl-XW-KDj" secondAttribute="trailing" constant="46.670000000000002" id="sZM-Im-DKY"/>
-                            <constraint firstItem="m9A-6z-Gt4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="saD-Wz-21R"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Vl-XW-KDj" secondAttribute="bottom" constant="241.66999999999999" id="t9B-f9-9uM"/>
+                            <constraint firstItem="TUZ-uF-tQI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4HY-pt-0AC"/>
+                            <constraint firstItem="m9A-6z-Gt4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9r1-56-JZd"/>
+                            <constraint firstItem="inN-ab-XNJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="102.5" id="TOy-OP-fya"/>
+                            <constraint firstItem="m9A-6z-Gt4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gcB-3X-7nu"/>
+                            <constraint firstItem="2Vl-XW-KDj" firstAttribute="top" secondItem="TUZ-uF-tQI" secondAttribute="bottom" constant="16.333333333333314" id="jGe-ib-p8t"/>
+                            <constraint firstItem="TUZ-uF-tQI" firstAttribute="top" secondItem="m9A-6z-Gt4" secondAttribute="bottom" constant="8" symbolic="YES" id="oSd-VC-N6K"/>
+                            <constraint firstItem="2Vl-XW-KDj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qlN-cR-yhs"/>
+                            <constraint firstItem="inN-ab-XNJ" firstAttribute="top" secondItem="2Vl-XW-KDj" secondAttribute="bottom" constant="20" id="ujU-vi-bR6"/>
                         </constraints>
                     </view>
                     <connections>
@@ -69,10 +90,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33" y="-27"/>
+            <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
